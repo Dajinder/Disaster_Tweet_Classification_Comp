@@ -60,39 +60,15 @@ The best models are tested on the unlabeled test.csv, producing predictions save
 Results
 The performance of the 12 vectorization-model combinations is summarized below (training set metrics, with cross-validated F1 scores for generalization):
 
+*Result Metrics for each combination:*
 
-S.No	Vectorization	Model	Accuracy	Precision	F1-Score	Sensitivity
-1	Count	Logistic_Regression	0.92	0.95	0.90	0.85
-2	Count	SVM	0.93	0.97	0.91	0.86
-3	Count	kNN	0.98	0.99	0.98	0.97
-4	Count	Random_Forest	0.96	0.98	0.95	0.92
-5	TF-IDF	Logistic_Regression	0.93	0.96	0.92	0.89
-6	TF-IDF	SVM	0.89	0.93	0.86	0.80
-7	TF-IDF	kNN	0.98	0.99	0.98	0.97
-8	TF-IDF	Random_Forest	0.98	0.99	0.98	0.96
-9	Word2Vec	Logistic_Regression	0.61	0.89	0.18	0.10
-10	Word2Vec	SVM	0.77	0.84	0.68	0.57
-11	Word2Vec	kNN	1.00	1.00	1.00	1.00
-12	Word2Vec	Random_Forest	1.00	1.00	1.00	0.99
-
-
-S.No	Vectorization	Model	CV_Mean_F1	CV_Std_F1	Best_Params
-1	Count	Logistic_Regression	0.58	0.07	{'C':1,'solver':'liblinear'}
-2	Count	SVM	0.58	0.08	{'C':1,'kernel':'rbf'}
-3	Count	kNN	0.21	0.15	{'n_neighbors':3,'weights':'distance'}
-4	Count	Random_Forest	0.57	0.07	{'max_depth':None,'min_samples_split':5,'n…
-5	TF-IDF	Logistic_Regression	0.58	0.05	{'C':10,'solver':'liblinear'}
-6	TF-IDF	SVM	0.58	0.06	{'C':1,'kernel':'linear'}
-7	TF-IDF	kNN	0.19	0.20	{'n_neighbors':3,'weights':'distance'}
-8	TF-IDF	Random_Forest	0.55	0.06	{'max_depth':None,'min_samples_split':5,'n...
-9	Word2Vec	Logistic_Regression	0.11	0.10	{'C':10,'solver':'lbfgs'}
-10	Word2Vec	SVM	0.51	0.06	{'C':10,'kernel':'rbf'}
-11	Word2Vec	kNN	0.51	0.04	{'n_neighbors':3,'weights':'distance'}
-12	Word2Vec	Random_Forest	0.41	0.06	{'max_depth':20,'min_samples_split':2,'n_e...
+<img width="500" height="420" alt="image" src="https://github.com/user-attachments/assets/042e83cc-ea5b-4885-84e1-de972dcbf050" />
 
 
 
+*Best Hyperparameter for each combination:*
 
+<img width="500" height="420" alt="image" src="https://github.com/user-attachments/assets/6a5cf9d2-9e49-44e7-a0b9-db9a6de408ec" />
 
 **Key Findings:**
 
